@@ -1,0 +1,38 @@
+:root {
+	--white-color: #ffffff;
+	--bg-color: #231a48;
+	--list-item-color: #dc6013;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--bg-color);
+}
+
+.left-panel,
+.right-panel {
+	border: 2px dashed var(--white-color);
+	padding: 1em;
+	width: 300px;
+	min-height: 400px;
+	margin: 1em;
+}
+
+.list-item {
+	color: var(--white-color);
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: var(--list-item-color);
+	border-radius: 0.5em;
+	cursor: grab;
+}
