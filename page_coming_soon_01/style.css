@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("images/background.png");
+	background-position: center;
+	background-size: cover;
+}
+
+.page-margin {
+	margin: 0 5%;
+}
+
+.logo {
+	padding: 2em 0;
+}
+
+.logo img {
+	width: 100px;
+}
+
+.content {
+	height: 80%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+}
+
+.maintainance-text {
+	font-size: 0.85em;
+	margin-bottom: 1em;
+}
+
+.launching-text {
+	font-size: 3em;
+	font-weight: 900;
+}
+
+.launching-text span {
+	color: #e89e16;
+}
+
+.learn-more-btn {
+	all: unset;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ffffff;
+	gap: 1em;
+	padding: 1em 0.5em;
+	margin-top: 1em;
+}
+
+.learn-more-btn img {
+	width: 20px;
+}
+
+.countdown-timer {
+	display: flex;
+	justify-content: start;
+	gap: 2em;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.d,
+.hrs,
+.mins,
+.secs {
+	font-size: 5em;
+}
+
+.d-text,
+.hrs-text,
+.mins-text,
+.secs-text {
+	font-size: 1em;
+}
+
+.rocket {
+	position: absolute;
+	animation: rocket 1s linear infinite;
+	width: 250px;
+	right: 10%;
+	bottom: 0;
+}
+
+@keyframes rocket {
+	0% {
+		bottom: 0;
+		opacity: 0;
+	}
+
+	100% {
+		bottom: 100%;
+		opacity: 1;
+	}
+}
